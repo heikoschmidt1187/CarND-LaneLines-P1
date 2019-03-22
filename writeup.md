@@ -79,6 +79,8 @@ Fourth, there is no color filtering. This wasn't really needed for the project, 
 
 Last but not least, the implemented method doesn't give us too much indication about distances. One may estimate it through line gaps, but in general it's not a sharp value. Same with curvature measurement - it's simply not possible with the straight lines and the missing distance information.
 
+Especially in the challenge video nearly all off the shortcomings come to reality.
+
 ### 3. Suggest possible improvements to your pipeline
 
 The following improvements may fix some of the above issues:
@@ -97,3 +99,6 @@ Do a color filtering for white and yellow.
 
 Issue 5:
 Same as Issue 3 - use perspective transform and camera calibration matrix.
+
+General:
+The Python code is not optimized to extend. There are many "not so beatiful" parts that are working for this project, but in productive should be refactored with respect to code quality, effectiveness and runtime.
